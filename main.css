@@ -1,0 +1,101 @@
+/*********************
+HEADING
+**********************/
+#heading {
+  border: solid green 1px;
+  width: 100%;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  height: 100px;
+  z-index: 1;
+  text-align: center;
+}
+
+
+
+/*********************
+Sidebar
+**********************/
+#sidebar {
+  border: solid blue 1px;
+  width: 120px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  overflow-y: scroll;
+  height: 70%;
+}
+
+#sidebar ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+#sidebar li {
+  list-style-type: none;
+  
+}
+
+
+
+
+
+/*********************
+Main Container
+**********************/
+#content-container {
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  top: 100px;
+  left: 120px;
+}
+
+.row {
+  border: solid black 3px;
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px;
+  margin-bottom: 10px;
+  width: 90%;
+  display: none;
+}
+
+.name {
+  text-decoration: none;
+  color: blue;
+  font-size: 1em;
+  padding: 5px;
+}
+
+#content-container ul {
+  width: 80%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#content-container li {
+  list-style-type: none;
+  float: left;
+  margin: 5px 20px 5px 0;
+}
+
+#content-container p {
+  width: 100%;
+  box-sizing: border-box;
+  clear: left;
+  padding: 0px;
+  padding-left: 40px;
+  display: none;
+  margin: 0;
+  
+}
