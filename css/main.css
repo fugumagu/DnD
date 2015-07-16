@@ -150,6 +150,10 @@ div.anchor {
   float: none;
 }
 
+table {
+  margin: 10px;
+}
+
 table.multi {
   float: left;
 }
@@ -159,9 +163,8 @@ table tbody {
   border: solid black 1px;
 }
 
-table caption {
-  width: 100%;
-  text-align: center;
+td, th {
+  padding-right: 6px;
 }
 
 .clear-fix {
