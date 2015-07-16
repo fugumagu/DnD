@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  box-sizing: border-box;
+}
+
+
+/*********************
+HEADING
+**********************/
+#heading {
+  border: solid black 1px;
+  width: 100%;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  height: 100px;
+  z-index: 1;
+  text-align: center;
+}
+
+#heading h1 {
+  margin-bottom: 15px;
+}
+
+#skip-to {
+    text-align: center;
+}
+
+#skip-to ul {
+    display: inline-block;
+    margin: 0;
+}
+
+#skip-to li {
+  list-style-type: none;
+  float: left;
+  margin: 1px;
+}
+
+#skip-to a:link, #skip-to a:hover, #skip-to a:visited {
+  text-decoration: none;
+  padding: 4px;
+  color: #0000EE;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+
+
+/*********************
+Sidebar
+**********************/
+#sidebar {
+  border: solid black 1px;
+  width: 140px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+#sidebar ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+#sidebar li {
+  list-style-type: none;
+  
+}
+
+
+
+
+
+/*********************
+Main Container
+**********************/
+#content-container {
+  width: 80%;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  position: relative;
+  top: 100px;
+  left: 152px;
+}
+
+.row {
+  border: solid black 3px;
+  padding: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: none;
+}
+
+.name {
+  text-decoration: none;
+  color: blue;
+  font-size: 1em;
+  padding: 5px;
+}
+
+div.anchor {
+  top: -110px;
+  display: block;
+  position: relative;
+}
+
+#content-container ul {
+  width: 90%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#content-container li {
+  list-style-type: none;
+  float: left;
+  margin: 5px 20px 5px 0;
+  display: static;
+}
+
+.description {
+  width: 100%;
+  box-sizing: border-box;
+  clear: left;
+  padding: 0px;
+  padding-left: 40px;
+  display: none;
+  margin: 0;
+}
+
+#content-container .description ul li {
+  list-style-type: disc;
+  display: list-item;
+  float: none;
+}
+
+table {
+  float: left;
+}
+
+table tbody {
+  display: block;
+  border: solid black 1px;
+}
+
+table caption {
+  width: 100%;
+  text-align: center;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+
+
+/*********************
+Footer
+**********************/
+#footer {
+  width: 100%;
+  height: 10px;
+  background-color: #999;
+  clear: both;
+  float: left;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
