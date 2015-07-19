@@ -1,0 +1,17 @@
+@media screen and (min-width: 590px) {
+	#heading h1 {
+  	font-size: 2em;
+	}
+
+	#skip-to {
+     top: 0px;
+   }
+	
+}
+
+
+@media screen and (min-width: 700px) {
+	#skip-to a:link, #skip-to a:hover, #skip-to a:visited {
+  	font-size: 1.2em;
+	}
+}

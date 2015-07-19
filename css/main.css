@@ -25,15 +25,19 @@ HEADING
 
 #heading h1 {
   margin-bottom: 15px;
+  font-size: 1.5em;
 }
 
 #skip-to {
     text-align: center;
+    position: relative;
+    top: -10px;
 }
 
 #skip-to ul {
     display: inline-block;
     margin: 0;
+    padding: 0 10px;
 }
 
 #skip-to li {
@@ -47,7 +51,7 @@ HEADING
   padding: 4px;
   color: #0000EE;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 0.9em;
 }
 
 
