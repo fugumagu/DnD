@@ -72,7 +72,7 @@ Sidebar
   top: 100px;
   left: 0;
   overflow-y: scroll;
-  height: 80%;
+  height: calc(100% - 150px);
 }
 
 #sidebar ul {
