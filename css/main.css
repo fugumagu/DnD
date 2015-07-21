@@ -6,9 +6,14 @@ body {
   box-sizing: border-box;
 }
 
+#sidebar, #content-container {
+  font-size: 0.8em;
+}
+
+
 
 /*********************
-HEADING
+Heading
 **********************/
 #heading {
   border: solid black 1px;
@@ -38,7 +43,7 @@ HEADING
 #skip-to {
     text-align: center;
     position: relative;
-    top: -10px;
+    bottom: 10px;
 }
 
 #skip-to ul {
@@ -46,12 +51,17 @@ HEADING
     margin: 2px auto 1px;
     padding: 0 10px;
 
+
 }
 
 #skip-to li {
   list-style-type: none;
   float: left;
   margin: 1px;
+}
+
+#skip-to li:nth-child(14) {
+  clear: left;
 }
 
 #skip-to a:link, #skip-to a:hover, #skip-to a:visited {
@@ -70,25 +80,22 @@ HEADING
 Sidebar
 **********************/
 #sidebarContainer {
-  height: 100%;
-  width: 160px;
+  width: 100%;
   display: inline-block;
   position: fixed;
-  top: 0;
+  top: 102px;
   left: 0;
   z-index: 50;
   background-color: white;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  padding: 5px;
+  margin: 0;
 }
 
 #sidebar {
   border: solid black 1px;
-  position: relative;
-  top: 102px;
-  overflow: hidden;
+  width: 95%;
   padding: 5px;
-  margin: 5px;
+  margin: 0 0 0 0;
 }
 
 #sidebar ul {
@@ -109,7 +116,8 @@ Sidebar
     margin-bottom: 10px;
     background: grey;
     padding: 5px;
-    width: 100px;
+    width: 90%;
+    text-align: center;
 
 }
 
@@ -141,12 +149,12 @@ a.buttonDown div, a.buttonDown legend{
 Main Container
 **********************/
 #content-container {
-  width: calc(100% - 200px);
-  margin: 0 5px;
+  width: 95%;
+  margin: 0 5 0 0px;
   padding: 0 5px;
   position: relative;
-  top: 100px;
-  left: 152px;
+  top: 265px;
+  left: 0;
   z-index: 20;
 }
 
@@ -154,9 +162,8 @@ Main Container
   border: solid black 3px;
   padding: 5px;
   padding-bottom: 5px;
-  margin: 5px;
-  margin-bottom: 10px;
-  width: 100%;
+  margin: 0px 5px 5px 10px;
+  width: 95%;
   display: none;
 }
 
@@ -165,24 +172,24 @@ Main Container
   color: blue;
   font-size: 1em;
   padding: 5px;
+  font-size: 1.2em;
 }
 
 div.anchor {
-  top: -110px;
+  top: -265px;
   display: block;
   position: relative;
 }
 
 #content-container ul {
   width: 90%;
-  margin-bottom: 10px;
-  overflow: hidden;
+  margin: 5px 0 0;
+
 }
 
 #content-container li {
   list-style-type: none;
-  float: left;
-  margin: 5px 20px 5px 0;
+  margin: 2px 20px 2px 0;
   display: static;
 }
 
@@ -196,14 +203,19 @@ div.anchor {
   margin: 0;
 }
 
+#content-container ul, .description {
+  padding-left: 15px;
+}
+
 #content-container .description ul li {
   list-style-type: disc;
   display: list-item;
   float: none;
+
 }
 
 table {
-  margin: 10px;
+  margin: 10px auto;
 }
 
 table.multi {
