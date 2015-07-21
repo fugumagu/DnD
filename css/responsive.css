@@ -1,4 +1,8 @@
 @media screen and (min-width: 700px) {
+	#heading {
+		height: 110px;
+	}
+
 	#heading h1 {
   	font-size: 2em;
 	}
@@ -10,4 +14,13 @@
 	#skip-to a:link, #skip-to a:hover, #skip-to a:visited {
   	font-size: 1.2em;
 	}
+
+	#sidebar {
+		top: 110px;
+	}
+
+	#content-container {
+		top: 110px;
+	}
 }
+

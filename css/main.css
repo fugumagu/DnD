@@ -17,15 +17,22 @@ HEADING
   position: fixed;
   top: 0;
   left: 0;
-  background: #ddd;
+  background: grey;
   height: 100px;
-  z-index: 1;
+  z-index: 100;
   text-align: center;
+  color: white;
 }
 
 #heading h1 {
-  margin-bottom: 15px;
+  margin: 7px auto 2px;
   font-size: 1.5em;
+  text-shadow: 2px 2px 3px black;
+}
+
+#heading h2 {
+  margin: 0 auto 5px;
+  text-shadow: 2px 2px 3px black;
 }
 
 #skip-to {
@@ -36,8 +43,9 @@ HEADING
 
 #skip-to ul {
     display: inline-block;
-    margin: 0;
+    margin: 2px auto 1px;
     padding: 0 10px;
+
 }
 
 #skip-to li {
@@ -52,6 +60,7 @@ HEADING
   color: #0000EE;
   font-weight: bold;
   font-size: 0.9em;
+  text-shadow: 1px 0px 1px #bbb;
 }
 
 
@@ -60,19 +69,26 @@ HEADING
 /*********************
 Sidebar
 **********************/
+#sidebarContainer {
+  height: 100%;
+  width: 160px;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 #sidebar {
   border: solid black 1px;
-  width: 140px;
-  display: inline-block;
-  float: left;
+  position: relative;
+  top: 102px;
   overflow: hidden;
   padding: 5px;
   margin: 5px;
-  position: fixed;
-  top: 100px;
-  left: 0;
-  overflow-y: scroll;
-  height: calc(100% - 150px);
 }
 
 #sidebar ul {
@@ -80,9 +96,41 @@ Sidebar
   margin-top: 0;
 }
 
+#sidebar ul.expandable {
+  display: none;
+}
+
 #sidebar li {
   list-style-type: none;
-  
+}
+
+#sidebar a legend, #sidebar a div {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: grey;
+    padding: 5px;
+    width: 100px;
+
+}
+
+#descriptions label {
+  display: block;
+  padding-left: 1.2em;
+  text-indent: -1.3em;
+}
+
+a.sideButton:link, a.sideButton:hover, a.sideButton:visited {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+a.buttonUp div, a.buttonUp legend {
+  box-shadow: 2px 2px 5px black;
+}
+
+a.buttonDown div, a.buttonDown legend{
+  box-shadow: inset 2px 2px 5px black;
 }
 
 
@@ -93,13 +141,13 @@ Sidebar
 Main Container
 **********************/
 #content-container {
-  width: 80%;
-  margin: 5px;
-  margin-bottom: 10px;
-  padding: 5px;
+  width: calc(100% - 200px);
+  margin: 0 5px;
+  padding: 0 5px;
   position: relative;
   top: 100px;
   left: 152px;
+  z-index: 20;
 }
 
 .row {

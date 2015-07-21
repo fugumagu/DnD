@@ -10,7 +10,8 @@
   <body>
     <div id="wrapper">
       <div id="heading">
-        <h1>D&amp;D Spells 5e</h1>
+        <h1>Dungeons &amp; Dragons Spells</h1>
+        <h2>5th Edition</h2>
         <div id="skip-to">
           <ul>
             <li><a href="#A">A</a></li>
@@ -43,192 +44,183 @@
         </div>
       </div>
       
-      <div id="sidebar">
+      <div id="sidebarContainer">
+        <div id="sidebar">
+          
+          <a href="" class="sideButton toggleButton buttonUp" id="allDescriptions"><div>Show all descriptions</div></a>
+          
+          <form>
+            <div id="filterBoxes">
+            
+              <!--All groupsets go below here -->
+              <groupset name="classes">
+                <a class="sideButton expandButton buttonUp" href=""><legend>Class</legend></a>
+                
+                <ul class="expandable">
+                  <li>
+                    <input type="checkbox" name="classes" id="bard" value="bard">
+                    <label for="bard">Bard</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="cleric" value="cleric">
+                    <label for="cleric">Cleric</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="druid" value="druid">
+                    <label for="druid">Druid</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="paladin" value="paladin">
+                    <label for="paladin">Paladin</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="ranger" value="ranger">
+                    <label for="ranger">Ranger</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="sorcerer" value="sorcerer">
+                    <label for="sorcerer">Sorcerer</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="warlock" value="warlock">
+                    <label for="warlock">Warlock</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="classes" id="wizard" value="wizard">
+                    <label for="wizard">Wizard</label>
+                  </li>
+                </ul>
+              </groupset>
+              
+              <groupset name="level">
+                <a class="sideButton expandButton buttonUp" href=""><legend>Spell Level</legend></a>
+                
+                <ul class="expandable">
+                  <li>
+                    <input type="checkbox" name="level" id="0" value="0">
+                    <label for="0">0 (Cantrip)</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="1" value="1">
+                    <label for="1">1</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="2" value="2">
+                    <label for="2">2</label>
+                  </li>
+                   
+                  <li>
+                    <input type="checkbox" name="level" id="3" value="3">
+                    <label for="3">3</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="4" value="4">
+                    <label for="4">4</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="5" value="5">
+                    <label for="5">5</label>
+                  </li>
+                  
+                   <li>
+                    <input type="checkbox" name="level" id="6" value="6">
+                    <label for="6">6</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="7" value="7" >
+                    <label for="7">7</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="8" value="8">
+                    <label for="8">8</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="level" id="9" value="9">
+                    <label for="9">9</label>
+                  </li>
+                </ul>
+              </groupset> 
+              
+
+              <groupset name="school">
+                <a class="sideButton expandButton buttonUp" href=""><legend>School</legend></a>
+                
+                <ul class="expandable">
+                  <li>
+                    <input type="checkbox" name="schoolschool" id="abjuration" value="abjuration">
+                    <label for="abjuration">Abjuration</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="school" id="conjuration" value="conjuration">
+                    <label for="conjuration">Conjuration</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="school" id="divination" value="divination">
+                    <label for="divination">Divination</label>
+                  </li>
+                   
+                  <li>
+                    <input type="checkbox" name="school" id="enchantment" value="enchantment">
+                    <label for="enchantment">Enchantment</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="school" id="evocation" value="evocation">
+                    <label for="evocation">Evocation</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="school" id="illusion" value="illusion">
+                    <label for="illusion">Illusion</label>
+                  </li>
+                  
+                   <li>
+                    <input type="checkbox" name="school" id="necromancy" value="necromancy">
+                    <label for="necromancy">Necromancy</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" name="school" id="transmutation" value="transmutation">
+                    <label for="transmutation">Transmutation</label>
+                  </li>
+                </ul>
+              </groupset> 
+            
+            <!--All groupsets go above here -->
+            </div>
+          </form>          
         
-        <form>
-          <groupset name="allDescriptions">
-                    
-            <ul>
-              <li id="descriptions">
-                <input type="checkbox" name="descriptions" id="allDescriptions">
-                <label for="descriptions">Show all descriptions</label>
-              </li>
-            </ul>
-          </groupset>
-        
-        <div id="filterBoxes">
-          
-          <!--All groupsets go below here -->
-          <groupset name="classes">
-            <legend>Class</legend>
-            
-            <ul>
-              <li>
-                <input type="checkbox" name="bard">
-                <label for="bard">Bard</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="cleric">
-                <label for="cleric">Cleric</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="druid">
-                <label for="druid">Druid</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="paladin">
-                <label for="paladin">Paladin</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="ranger">
-                <label for="ranger">Ranger</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="sorcerer">
-                <label for="sorcerer">Sorcerer</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="warlock">
-                <label for="warlock">Warlock</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="wizard">
-                <label for="wizard">Wizard</label>
-              </li>
-            </ul>
-          </groupset>
-          
-          <groupset name="level">
-            <legend>Spell Level</legend>
-            
-            <ul>
-              <li>
-                <input type="checkbox" name="0">
-                <label for="0">0 (Cantrip)</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="1">
-                <label for="1">1</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="2">
-                <label for="2">2</label>
-              </li>
-               
-              <li>
-                <input type="checkbox" name="3">
-                <label for="3">3</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="4">
-                <label for="4">4</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="5">
-                <label for="5">5</label>
-              </li>
-              
-               <li>
-                <input type="checkbox" name="6">
-                <label for="6">6</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="7">
-                <label for="7">7</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="8">
-                <label for="8">8</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="9">
-                <label for="9">9</label>
-              </li>
-            </ul>
-          </groupset> 
-          
-
-          <groupset name="school">
-            <legend>School</legend>
-            
-            <ul>
-              <li>
-                <input type="checkbox" name="abjuration">
-                <label for="abjuration">Abjuration</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="conjuration">
-                <label for="conjuration">Conjuration</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="divination">
-                <label for="divination">Divination</label>
-              </li>
-               
-              <li>
-                <input type="checkbox" name="enchantment">
-                <label for="enchantment">Enchantment</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="evocation">
-                <label for="evocation">Evocation</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="illusion">
-                <label for="illusion">Illusion</label>
-              </li>
-              
-               <li>
-                <input type="checkbox" name="necromancy">
-                <label for="necromancy">Necromancy</label>
-              </li>
-              
-              <li>
-                <input type="checkbox" name="transmutation">
-                <label for="transmutation">Transmutation</label>
-              </li>
-            </ul>
-          </groupset> 
-          
-          <!--All groupsets go above here -->
-          </div>
-
-
-
-        </form>          
-      
+        </div>
       </div>
-      
       <div id="content-container">
       
       </div>    
+      
     </div>
 
-    <div id="footer">
-      <p>Hello</p>
-    </div>
+   
     
     <!--JavaScript links-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/spells.js"></script>
     <script type="text/javascript" src="js/program.js"></script>
+
     
   </body>
 </html>
