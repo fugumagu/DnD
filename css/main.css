@@ -1,10 +1,6 @@
-html {
-  height: calc(100% + 265px);
-}
-
 body {
   margin: 0;
-  height: auto;
+
 }
 
 #wrapper {
