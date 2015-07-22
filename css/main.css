@@ -165,7 +165,7 @@ Main Container
 **********************/
 #content-container {
   width: 95%;
-  margin: 0 5 0 0px;
+  margin: 0 5px 50px 0px;
   padding: 0 5px;
   position: relative;
   top: 265px;
@@ -260,18 +260,31 @@ td, th {
 /*********************
 Footer
 **********************/
-#footer {
+footer {
   width: 100%;
-  height: 10px;
-  background-color: #999;
-  clear: both;
-  float: left;
+  background-color: rgb(46, 76, 77);
   position: fixed;
   bottom: 0;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  z-index: 50;
+  color: white;
+  font-size: 0.5em;
 }
 
+footer p {
+  margin: 3px 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+footer a:link, footer a:hover, footer a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 0.5em;
+}
 
 #clear-bottom {
   position: fixed;
@@ -281,4 +294,5 @@ Footer
   width: 100%;
   padding: 0;
   margin: 0;
+  z-index: -5;
 }
